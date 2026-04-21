@@ -1,0 +1,65 @@
+/* Provide section */
+
+.provide-section, h2 {
+    text-align: center;
+}
+
+.provide-section img {
+    width: 400px;
+}
+
+.provide-section h3 {
+    padding: 24px 0;
+}
+
+.provide-section-container h2 {
+    color: var(--accent-color);
+    font-size: 40px;
+}
+
+.indoors,
+.outdoors,
+.engagement,
+.birthday {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 16px 320px;
+}
+
+.indoors img,
+.outdoors img,
+.engagement img,
+.birthday img {
+    width: 400px;
+}
+
+.indoors div,
+.outdoors div,
+.engagement div,
+.birthday div {
+    width: 70%;
+    text-align: justify;
+    padding: 24px;
+}
+
+.birthday li {
+    margin-left: 24px;
+}
+
+.provide-section-container a {
+    display: block;
+    width: 16%;
+    margin: 32px auto;
+    background-color: var(--accent-color);
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.provide-section-container a:hover {
+    background-color: var(--accent-color-darker);
+}

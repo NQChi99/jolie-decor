@@ -1,0 +1,248 @@
+/* Services section */
+
+.services-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.services-section-text h2 {
+    margin-right: 24px;
+    margin-bottom: 16px;
+}
+
+.services-section-text ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.services-section img {
+    width: 640px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Client section */
+.clients-section h2 {
+    text-align: center;
+}
+
+.client-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    padding: 24px 480px;
+}
+
+.client {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: space-evenly;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.client-photo {
+    width: 450px;
+    height: 400px;
+}
+
+.client-photo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.client-text {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    background-color: var(--secondary-color);
+}
+
+.client-text h4 {
+    padding-top: 16px;
+}
+
+.client-text p {
+    text-align: justify;
+    line-height: 2;
+    margin-top: 16px;
+}
+
+.client-text hr {
+    position: relative;
+    margin-top: 16px;
+    border: 1px solid var(--black-color);
+}
+
+/* Proof section */
+
+.material-symbols-outlined {
+    font-size: 120px;
+}
+
+.proof-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 64px;
+    padding: 24px 200px;
+    margin-bottom: 32px;
+}
+
+.proof-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 8px solid var(--secondary-color);
+    width: 100%;
+    padding: 40px;
+}
+
+.proof-container h3 {
+    text-transform: uppercase;
+}
+
+.number {
+    font-size: 40px;
+}
+
+/* Form section */
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    background-color: var(--primary-color);
+}
+
+.form-section-photo {
+    position: relative;
+    width: 40%;
+}
+
+.form-section-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.form-section-photo h3 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primary-color);
+}
+
+.form-section-photo h4 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primary-color);
+    text-align: center;
+    width: 100%;
+}
+
+.form-container {
+    width: 60%;
+    padding: 40px 0;
+    border-top: 1px solid var(--black-color);
+    border-bottom: 1px solid var(--black-color);
+}
+
+form {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'title title'
+        'name email'
+        'guests type'
+        'message message'
+        'submit submit';
+    justify-items: center;
+    align-items: center;
+}
+
+form h2 {
+    grid-area: title;
+}
+
+form label {
+    display: block;
+    margin-left: 20px;
+}
+
+form input,
+form select,
+textarea {
+    padding: 8px;
+    border-radius: 8px;
+    width: 80%;
+    margin: 16px;
+}
+
+.area-name {
+    grid-area: name;
+    width: 80%;
+}
+
+.area-email {
+    grid-area: email;
+    width: 80%;
+}
+
+.area-guests {
+    grid-area: guests;
+    width: 80%;
+}
+
+.area-type {
+    grid-area: type;
+    width: 80%;
+}
+
+.area-message {
+    grid-area: message;
+    width: 60%;
+}
+
+.area-submit {
+    grid-area: submit;
+}
+
+.area-submit input {
+    padding: 12px;
+    font-weight: bold;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.area-submit input:hover {
+    cursor: pointer;
+    background-color: var(--accent-color-darker);
+}
+
+/* Instagram section */
+
+.instagram-section {
+    padding: 40px 80px;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    margin-top: 24px;
+}

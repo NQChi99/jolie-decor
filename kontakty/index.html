@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jolie Decor</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=call,crown,diamond,local_bar,location_on,mail" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../sluzby/">Služby</li></a>
+                <li><a href="../portfolio/">Portfolio</li></a>
+                <li><a href="../index.html"><img src="https://joliedecor.cz/wp-content/uploads/2025/11/Etikets-1.png"
+                            alt="Jolie decor logo"></a>
+                </li>
+                <li><a href="../o-nas/">O nás</li></a>
+                <li><a href="#">Kontakty</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <img src="https://scontent.fprg1-1.fna.fbcdn.net/v/t39.30808-6/475544271_937458631827315_7500700765723817493_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=dd6889&_nc_ohc=yF0B3fUGnhwQ7kNvwHvlf0A&_nc_oc=AdrgFfIuNlfSm1y2sYz6XAfQzMKmQDQLoACtfBDLQgdVZe3i7YC8CsOL2HMJ4c-61oaEae7ekZ-lDLG02UcMgH_r&_nc_zt=23&_nc_ht=scontent.fprg1-1.fna&_nc_gid=TpsujMpuIqRheoqRLS739A&_nc_ss=7a3a8&oh=00_Af24hSQKxN_w7R4m1zmhmR9aUmYFTQN0VmgeEX7EfQn-vA&oe=69EC18DF"
+                alt="banner kontakty sezeni">
+            <h1>Kontakty</h1>
+        </section>
+
+        <section class="form-section">
+            <h3>Chceme znát váš příběh!</h3>
+            <h5>Vyplňte kontaktní formulář a domluvíme se na společné schůzce.</h5>
+            <form>
+                <label for="bride">Jméno nevěsty: *</label>
+                <input type="text" id="bride" placeholder="Zadejte celé jméno nevěsty" required>
+
+                <label for="groom">Jméno ženicha: *</label>
+                <input type="text" id="groom" placeholder="Zadejte celé jméno ženicha" required>
+
+                <label for="email">E-mail: *</label>
+                <input type="email" id="email" placeholder="Zadejte e-mail" required>
+
+                <label for="telephone">Telefonní číslo: *</label>
+                <input type="number" id="telephone" placeholder="Zadejte telefonní číslo" required>
+
+                <label for="date">Datum akce: </label>
+                <input type="date" id="date">
+
+                <label for="guests">Počet hostů (přibližně): </label>
+                <input type="number" id="guests" min="0" placeholder="Zadejte počet hostů">
+
+                <label for="occasion">Typ události: *</label>
+                <select name="occasion" id="occasion" required>
+                    <option selected disabled>Vyberte jednu z možností</option>
+                    <option>Svatba</option>
+                    <option>Zásnubní obřad</option>
+                    <option>Narozeniny</option>
+                    <option>Oslava</option>
+                    <option>Event</option>
+                    <option>Jiné</option>
+                </select>
+
+                <label for="place">Bude se událost konat uvnitř nebo venku? *</label>
+                <select name="place" id="place" required>
+                    <option selected disabled>Vyberte jednu z možností</option>
+                    <option>Uvnitř</option>
+                    <option>Venku</option>
+                    <option>Kombinace</option>
+                </select>
+
+                <label for="details">Vaše představa a další detaily: </label>
+                <textarea name="details" id="details" rows="5"
+                    placeholder="Popište nám vaši představu. Můžete poslat také pár obrázků designu výzdoby."></textarea>
+                <input type="file" id="file" multiple>
+
+                <p>* - povinné údaje</p>
+
+                <input type="submit" value="Odeslat">
+            </form>
+        </section>
+
+        <section class="faq">
+            <h3>Často kladené otázky</h3>
+
+            <details>
+                <summary>Kolik stojí svatební výzdoba?</summary>
+                <p>Cena je vždy individuální a odvíjí se od rozsahu, sezóny a konkrétní vize. Uveďte nám prosím v
+                    kontaktním formuláři orientační rozpočet a rádi pro vás připravíme kalkulaci na míru, která
+                    maximalizuje vizuální dopad.</p>
+            </details>
+
+            <details>
+                <summary>Chceme pomoc jen s výzdobou, je to u vás možné?</summary>
+                <p>Ano, samozřejmě! To je naše hlavní služba a to, co nás baví nejvíc. Rádi pro vás navrhneme a
+                    zrealizujeme jen dekorace (obřadní místo, hostina, květiny) podle Vašeho přání.</p>
+            </details>
+
+            <details>
+                <summary>Děláte i kompletní koordinaci a svatby na klíč?</summary>
+                <p>Ne, primárně jsme tým dekoratérů snů. Specializujeme se na design a výzdobu od květin, světel,
+                    nábytku až po celkovou atmosféru. Nezajišťujeme komplexní koordinaci celého dne (dodavatele,
+                    harmonogram, logistiku). Můžeme vám však doporučit spolehlivé koordinátory, se kterými rádi
+                    spolupracujeme.</p>
+            </details>
+
+            <details>
+                <summary>Můžeme si na svatbu domluvit vlastní dodavatele?</summary>
+                <p>Ano. Dekorace a design jsou naše parketa. Vždy ctíme Váš výběr externích dodavatelů a rádi s nimi na
+                    místě spolupracujeme, aby Váš den proběhl hladce.</p>
+            </details>
+
+            <details>
+                <summary>Zajišťujete výzdobu i pro jiné události než svatby?</summary>
+                <p>Ano! Stejnou vášní a péčí navrhujeme a realizujeme dekorace pro narozeniny, firemní akce, oslavy a
+                    další eventy. Mrkněte na sekci “Co už máme za sebou” pro inspiraci!</p>
+            </details>
+
+            <details>
+                <summary>Můžete nám doporučit i ověřené dodavatele, jako je fotograf nebo make-up artist?</summary>
+                <p>Ano, rádi! Během let spolupráce jsme si vytvořili úzký okruh prověřených profesionálů (fotografové,
+                    make-up artisté, atd.), se kterými pravidelně pracujeme a známe jejich kvalitu. Tyto kontakty vám
+                    rádi poskytneme, protože věříme, že díky naší synergii a vzájemnému sladění (designu a služeb) bude
+                    Váš den vizuálně dokonalý od A do Z.</p>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contacts">
+            <h2>Kontakty</h2>
+            <ul>
+                <li><span class="material-symbols-outlined">
+                        call
+                    </span>CZ: +420 725 435 130</li>
+                <li><span class="material-symbols-outlined">
+                        call
+                    </span>VN: +420 775 748 333</li>
+                <li><a href="mailto:info@lunasbeauty.cz"><span class="material-symbols-outlined">
+                            mail
+                        </span>info@lunasbeauty.cz</a></li>
+                <li><span class="material-symbols-outlined">
+                        location_on
+                    </span>Horní 212, 252 44 Psáry-Dolní Jirčany</li>
+            </ul>
+        </div>
+        <div class="footer-logo">
+            <img src="https://joliedecor.cz/wp-content/uploads/2025/11/Etikets-1.png" alt="Jolie decor logo">
+        </div>
+        <div class="footer-socials">
+            <h2>Sociální sítě</h2>
+            <a href="https://www.facebook.com/kim.thinh.562"><img
+                    src="https://joliedecor.cz/wp-content/uploads/2025/11/Group-1821.png" alt="facebook logo"></a>
+            <a href="https://www.instagram.com/jolie.decor.cz/"><img
+                    src="https://joliedecor.cz/wp-content/uploads/2025/11/Group-1819.png" alt="instagram logo"></a>
+        </div>
+        <h5>Copyright © 2026 | All rights reserved Jolie Decor</h5>
+    </footer>
+</body>
+
+</html>
