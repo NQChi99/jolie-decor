@@ -1,0 +1,50 @@
+/* Kontakt */
+
+.form-section h3 {
+    text-align: center;
+    padding: 56px 0 8px 0;
+}
+
+.form-section h5 {
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 32px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0 auto;
+}
+
+label {
+    padding: 8px 0;
+    border-radius: 8px;
+}
+
+input, select, textarea {
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+input[type="file"] {
+    padding: 0 0 16px 0;
+    border-radius: 0;
+}
+
+input[type="submit"] {
+    width: 15%;
+    margin: 24px auto 40px auto;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 12px;
+    font-weight: bold;
+    border: 1px solid var(--primary-color);
+}
+
+input[type="submit"]:hover {
+    background-color: var(--accent-color-darker);
+    cursor: pointer;
+}
