@@ -2,6 +2,7 @@
 
 .services-section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 24px;
@@ -10,12 +11,16 @@
 .services-section-text h2 {
     margin-right: 24px;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .services-section-text ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
+    margin: 0 8px;
+    padding: 16px;
 }
 
 .services-section img {
@@ -88,8 +93,9 @@
 
 .proof-section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-flow: column;
+    justify-content: center;
     gap: 64px;
     padding: 24px 200px;
     margin-bottom: 32px;
@@ -245,4 +251,83 @@ iframe {
     width: 100%;
     height: 400px;
     margin-top: 24px;
+}
+
+@media screen and (max-width: 1100px) {
+    .form-section-photo {
+        display: none;
+    }
+
+    .form-container {
+        border: 0;
+        text-align: center;
+    }
+
+    footer {
+        padding-left: 40px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .client-container {
+        padding: 8px;
+        margin-bottom: 40px;
+    }
+
+    .client {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        margin-bottom: 0;
+    }
+
+    .client-photo {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+
+    .client-text {
+        margin-top: 56px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .services-section-text h2 {
+        font-size: 40px;
+    }
+
+    .proof-section {
+        grid-auto-flow: row;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .services-section-text h2 {
+        font-size: 36px;
+    }
+
+    .services-section-text ul {
+        gap: 20px;
+    }
+
+}
+
+@media screen and (max-width: 527px) {
+
+    .client-text,
+    .client-photo {
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    form h2 {
+        font-size: 36px;
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .proof-section {
+        padding: 8px;
+        margin: 0 24px;
+    }
 }
