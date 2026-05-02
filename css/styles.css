@@ -132,6 +132,7 @@ h1::after {
     letter-spacing: 4px;
     padding: 8px;
     font-size: 20px;
+    text-align: center;
 }
 
 /* Footer */
@@ -226,4 +227,77 @@ details p {
 summary:hover {
     cursor: pointer;
     color: var(--accent-color);
+}
+
+@media screen and (max-width: 1350px) {
+    h1 {
+        top: 35%;
+    }
+
+    h1::after {
+        top: 100%;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .hero-section h2 {
+        top: 50%;
+    }
+}
+
+@media screen and (max-width: 965px) {
+    .hero-section h2 {
+        top: 60%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    footer {
+        display: block;
+        padding: 0;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .footer-contacts h2 {
+        text-align: center;
+    }
+
+    .footer-socials {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .hero-section h2 {
+        top: 55%;
+    }
+}
+
+@media screen and (max-width: 579px) {
+    .hero-section h2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .footer-socials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        text-align: center;
+    }
 }
