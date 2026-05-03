@@ -8,8 +8,8 @@
     padding: 24px;
 }
 
-.services-section-text h2 {
-    margin-right: 24px;
+.services-section-text h3 {
+    margin-right: 32px;
     margin-bottom: 16px;
     text-align: center;
 }
@@ -290,7 +290,7 @@ iframe {
 }
 
 @media screen and (max-width: 850px) {
-    .services-section-text h2 {
+    .services-section-text h3 {
         font-size: 40px;
     }
 
@@ -300,7 +300,7 @@ iframe {
 }
 
 @media screen and (max-width: 720px) {
-    .services-section-text h2 {
+    .services-section-text h3 {
         font-size: 36px;
     }
 
