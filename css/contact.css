@@ -23,6 +23,11 @@ label {
     border-radius: 8px;
 }
 
+.required::after, form p::before {
+    content: " *";
+    color: red;
+}
+
 input, select, textarea {
     padding: 8px;
     border-radius: 8px;

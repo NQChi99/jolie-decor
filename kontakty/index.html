@@ -33,8 +33,7 @@
 
     <main>
         <section class="hero-section">
-            <img src="../img/jolie_ring.jpg"
-                alt="banner kontakty sezeni">
+            <img src="../img/jolie_ring.jpg" alt="banner kontakty sezeni">
             <h1>Kontakty</h1>
         </section>
 
@@ -42,25 +41,25 @@
             <h3>Chceme znát váš příběh!</h3>
             <h5>Vyplňte kontaktní formulář a domluvíme se na společné schůzce.</h5>
             <form>
-                <label for="bride">Jméno nevěsty: *</label>
+                <label for="bride" class="required">Jméno nevěsty</label>
                 <input type="text" id="bride" placeholder="Zadejte celé jméno nevěsty" required>
 
-                <label for="groom">Jméno ženicha: *</label>
+                <label for="groom" class="required">Jméno ženicha</label>
                 <input type="text" id="groom" placeholder="Zadejte celé jméno ženicha" required>
 
-                <label for="email">E-mail: *</label>
+                <label for="email" class="required">E-mail</label>
                 <input type="email" id="email" placeholder="Zadejte e-mail" required>
 
-                <label for="telephone">Telefonní číslo: *</label>
+                <label for="telephone" class="required">Telefonní číslo</label>
                 <input type="number" id="telephone" placeholder="Zadejte telefonní číslo" required>
 
-                <label for="date">Datum akce: </label>
+                <label for="date">Datum akce</label>
                 <input type="date" id="date">
 
-                <label for="guests">Počet hostů (přibližně): </label>
+                <label for="guests">Počet hostů (přibližně)</label>
                 <input type="number" id="guests" min="0" placeholder="Zadejte počet hostů">
 
-                <label for="occasion">Typ události: *</label>
+                <label for="occasion" class="required">Typ události</label>
                 <select name="occasion" id="occasion" required>
                     <option selected disabled>Vyberte jednu z možností</option>
                     <option>Svatba</option>
@@ -71,7 +70,7 @@
                     <option>Jiné</option>
                 </select>
 
-                <label for="place">Bude se událost konat uvnitř nebo venku? *</label>
+                <label for="place" class="required">Bude se událost konat uvnitř nebo venku?</label>
                 <select name="place" id="place" required>
                     <option selected disabled>Vyberte jednu z možností</option>
                     <option>Uvnitř</option>
@@ -79,12 +78,12 @@
                     <option>Kombinace</option>
                 </select>
 
-                <label for="details">Vaše představa a další detaily: </label>
+                <label for="details">Vaše představa a další detaily:</label>
                 <textarea name="details" id="details" rows="5"
                     placeholder="Popište nám vaši představu. Můžete poslat také pár obrázků designu výzdoby."></textarea>
                 <input type="file" id="file" multiple>
 
-                <p>* - povinné údaje</p>
+                <p> - povinné údaje</p>
 
                 <input type="submit" value="Odeslat">
             </form>
